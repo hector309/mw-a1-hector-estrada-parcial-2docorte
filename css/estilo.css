@@ -1,0 +1,212 @@
+/* Patrones globales del CSS */ 
+/* Títulos, Enlaces y Botones */ 
+h1, h2, h3, a, button { font-family: 'Permanent Marker', cursive; }
+
+/* Subtítulos, Párrafos, Formularios y otras etiquetas de textos */ 
+h4, h5, h6, p, form, input, select, textarea, option, table, tr, th, td, span, div, strong, em { font-family: 'Montserrat', sans-serif; }
+
+/* Asignar display: block; a todas las cajas de estructura */ 
+header, main, footer, aside, section, article, figure, nav, figcaption, div { display: block; }
+
+/* Anular margen por defecto de body */ 
+body { margin: 0 !important; }
+
+/* Quitar Scroll Horizontal */
+body { overflow-x: hidden; background: #fff }
+
+/* Estilo propio */
+
+/* Componente Menú Móviles */
+aside#menu-movil { width: 290px; height: 100%; display: block; margin: 0; float: none; position: fixed; top: 0; left: -290px; z-index: 99999; background: #000; }
+
+aside#menu-movil a#abrir { width: 40px; height: auto; display: none; margin: 0; float: none; position: absolute; top: 30px; right: -60px; z-index: 99996; text-align: center; font-size: 1.3em; padding: 8px 0; transition: all 0.3s ease-in; color: #000; }
+aside#menu-movil a#abrir:hover { color: #999; transition: all 0.3s ease-in; }
+
+aside#menu-movil a#cerrar { width: 40px; height: auto; display: none; margin: 0; float: none; position: absolute; top: 30px; right: -60px; z-index: 99996; color: #000; text-align: center; font-size: 1.3em; padding: 8px 0; transition: all 0.3s ease-in; }
+aside#menu-movil a#cerrar:hover { color: #999; transition: all 0.3s ease-in; }
+
+aside#menu-movil nav { width: 70%; height: auto; display: block; margin: 40px auto 0 auto; float: none; position: relative; }
+aside#menu-movil nav a { width: 100%; height: auto; display: block; margin: 0 auto 25px; float: none; position: relative; color: #fff; text-decoration: none; transition: all 0.3s ease-in; }
+aside#menu-movil nav a:hover { color: red; transition: all 0.3s ease-in; }
+
+
+/* Componente: HEADER */
+header { width: 100%; height: 133px; position: fixed; top: 0; left: 0; z-index: 9999; margin: 0; float: none; background: transparent; }
+
+header article { width: 1100px; height: 133px; position: relative; margin: 0 auto; float: none; }
+
+header article a { width: 189px; height: 80px; display: block; position: relative; margin: 0; float: left; top: 33px; }
+header article img { width: auto; height: 80px; display: block; position: relative; margin: 0 auto; float: none; }
+
+header article nav { width: 470px; height: 50px; display: block; position: relative; margin: 0; float: right; }
+header article nav a { width: 98px; height: auto; margin: 0 25px 0 0; float: left; position: relative; display: block; text-decoration: none; color: #fff; text-transform: uppercase; font-weight: 400; font-size: 1.2em; text-align: center; top: 65px; text-shadow: #000 0 2px 5px; }
+header article nav a:last-child { margin: 0; }
+header article nav a:hover { transition: all 0.3s ease-in; color: red; }
+
+
+/* Componente: Contenedor MAIN */
+main { width: 100%; height: auto; position: relative; margin: 0 auto; float: none; }
+
+/* Componente: Contenedor Botón Whatsapp flotante */
+main a#btn-whatsapp { width: 50px; height: 50px; display: block; float: none; position: fixed; top: 727px; right: 150px; z-index: 9998; border-radius: 50%; color: #fff; background: rgb(4, 150, 12); text-decoration: none; font-size: 2.5em; text-align: center; line-height: 1em; transition: all 0.3s ease-in; }
+main a#btn-whatsapp i { width: 17px; height: 17px; display: block; float: none; margin: 5px 9px; font-size: 0.95em; color: #fff; text-align: center; transition: all 0.3s ease-in; }
+main a#btn-whatsapp i:hover { color: #000; transition: all 0.3s ease-in; }
+
+
+/* Componente: Contenedor Banner superior */
+
+main section#banner-superior { width: 100%; height: 700px; position: relative; margin: 0 auto; float: none; background: url(../img/banner-superior.jpg) no-repeat top center; background-size: cover; }
+main section#banner-superior article { width: 100%; height: auto; position: relative; margin: 0 auto; float: none; }
+main section#banner-superior article h3 { width: auto; height: auto; margin: 0; float: none; position: relative; display: block; text-decoration: none; color: #fff; text-transform: uppercase; font-weight: 400; font-size: 2.5em; text-align: center; top: 350px; text-shadow: #000 0 2px 5px; }
+
+
+/* Componente: Gorras  */
+main section#grid-gorras { width: 100%; height: 700px; position: relative; margin: 50px auto; float: none; background: #fff; }
+main section#grid-gorras div { width: 100%; height: 1px; position: absolute; margin: 0 auto; float: none; }
+main section#grid-gorras h2 { width: auto; height: auto; margin: 0; float: none; position: relative; display: block; text-decoration: none; color: red; text-transform: uppercase; font-weight: 400; font-size: 3em; text-align: center; text-shadow: #000 0 2px 5px; top: 100px; }
+main section#grid-gorras article { width: 1100px; height: auto; position: relative; margin: 0 auto; float: none; padding: 60px 0; }
+main section#grid-gorras article figure {  width: 305px; height: 305px; position: relative; margin: 50px 20px 0 20px; float: left; display: inline-block; }
+main section#grid-gorras article figure a { width: 330px; height: 330px; position: relative; margin: 17px; float: none; display: inline-block ; overflow: hidden; transition: all 0.3s ease-in; }
+main section#grid-gorras article figure a img { width: 100%; height: auto; display: block; margin: 0 auto; float: none; position: relative; transition: all 0.3s ease-in; }
+main section#grid-gorras article a:hover { opacity: 0.9; transition: all 0.3s ease-in }
+main section#grid-gorras article a:hover img { transform: scale(1.05); transition: all 0.3s ease-in }
+main section#grid-gorras article figure h5 { font-size: 1.1em; color: red; font-weight: 800; line-height: 1.5em; margin: 0px; padding: 10px 0 15px; letter-spacing: -0.015em; text-align: center; }
+main section#grid-gorras article figure p { margin: 0; font-size: 0.9em; color: #555; letter-spacing: 0; font-weight: 400; line-height: 1.3em; padding: 0; text-align: center; }
+main section#grid-gorras article figure h3 { width: auto; height: auto; margin: 0; float: none; position: relative; display: block; text-decoration: none; color: red; text-transform: uppercase; font-weight: 400; font-size: 1.2em; text-align: center; text-shadow: #000 0 1px 2px; }
+
+
+/* Componente: Beanies  */
+main section#grid-beanies { width: 100%; height: 1180px; position: relative; margin: 0 auto; float: none; background: #fff; }
+main section#grid-beanies div { width: 100%; height: 1px; position: absolute; margin: 0 auto; float: none; }
+main section#grid-beanies h2 { width: auto; height: auto; margin: 0; float: none; position: relative; display: block; text-decoration: none; color: red; text-transform: uppercase; font-weight: 400; font-size: 3em; text-align: center; text-shadow: #000 0 2px 5px; padding: 120px 0 0; }
+main section#grid-beanies article { width: 1100px; height: auto; position: relative; margin: 0 auto; float: none; }
+main section#grid-beanies article figure {  width: 305px; height: 305px; position: relative; margin: 50px 20px 0 20px; float: left; display: inline-block; }
+main section#grid-beanies article figure:nth-child(4) {  width: 305px; height: 305px; position: relative; margin: 50px 20px 0 20px; float: left; display: inline-block; top: 130px; }
+main section#grid-beanies article figure:nth-child(5) {  width: 305px; height: 305px; position: relative; margin: 50px 20px 0 20px; float: left; display: inline-block; top: 130px; }
+main section#grid-beanies article figure:nth-child(6) {  width: 305px; height: 305px; position: relative; margin: 50px 20px 0 20px; float: left; display: inline-block; top: 130px; }
+main section#grid-beanies article figure a { width: 330px; height: 330px; position: relative; margin: 17px; float: none; display: inline-block ; overflow: hidden; transition: all 0.3s ease-in; }
+main section#grid-beanies article figure a img { width: 100%; height: auto; display: block; margin: 0 auto; float: none; position: relative; transition: all 0.3s ease-in; }
+main section#grid-beanies article a:hover { opacity: 0.9; transition: all 0.3s ease-in }
+main section#grid-beanies article a:hover img { transform: scale(1.05); transition: all 0.3s ease-in }
+main section#grid-beanies article figure h5 { font-size: 1.1em; color: red; font-weight: 800; line-height: 1.5em; margin: 0px; padding: 10px 0 15px; letter-spacing: -0.015em; text-align: center; }
+main section#grid-beanies article figure p { margin: 0; font-size: 0.9em; color: #555; letter-spacing: 0; font-weight: 400; line-height: 1.3em; padding: 0; text-align: center; }
+main section#grid-beanies article figure h3 { width: auto; height: auto; margin: 0; float: none; position: relative; display: block; text-decoration: none; color: red; text-transform: uppercase; font-weight: 400; font-size: 1.2em; text-align: center; text-shadow: #000 0 1px 2px; }
+
+/* Componente: Promos Beanies  */
+main section#grid-promos { width: 100%; height: 700px; position: relative; margin: 50px auto; float: none; background: #fff; }
+main section#grid-promos div { width: 100%; height: 1px; position: absolute; margin: 0 auto; float: none; }
+main section#grid-promos h2 { width: auto; height: auto; margin: 0; float: none; position: relative; display: block; text-decoration: none; color: red; text-transform: uppercase; font-weight: 400; font-size: 3em; text-align: center; text-shadow: #000 0 2px 5px; padding: 120px 0 0; }
+main section#grid-promos article { width: 1100px; height: auto; position: relative; margin: 40px 0 0; float: none; }
+main section#grid-promos article figure { width: 495px; height: 275px;; position: relative; margin: 2px 25px 0px 0px; float: left; display: inline-block; left: 420px; }
+main section#grid-promos article figure a { width: 490px; height: 250px; position: relative; margin: 0 25px 0 0px; float: none; display: inline-block; overflow: hidden; transition: all 0.3s ease-in; }
+main section#grid-promos article figure a img { width: 500px; height: 300px; display: block; margin: 0; float: none; position: relative; transition: all 0.3s ease-in; }
+main section#grid-promos article a:hover { opacity: 0.9; transition: all 0.3s ease-in }
+main section#grid-promos article a:hover img { transform: scale(1.05); transition: all 0.3s ease-in }
+
+/* Componente: Camisetas */
+main section#grid-camisetas { width: 100%; height: 750px; position: relative; margin: 50px auto; float: none; background: #fff; }
+main section#grid-camisetas div { width: 100%; height: 1px; position: absolute; margin: 0 auto; float: none; }
+main section#grid-camisetas h2 { width: auto; height: auto; margin: 0; float: none; position: relative; display: block; text-decoration: none; color: red; text-transform: uppercase; font-weight: 400; font-size: 3em; text-align: center; text-shadow: #000 0 2px 5px; top: 100px; }
+
+main section#grid-camisetas article { width: 1100px; height: auto; position: relative; margin: 0 auto; float: none; padding: 60px 0; }
+main section#grid-camisetas article figure {  width: 305px; height: 305px; position: relative; margin: 50px 20px 0 20px; float: left; display: inline-block; }
+main section#grid-camisetas article figure a { width: 330px; height: 330px; position: relative; margin: 17px; float: none; display: inline-block ; overflow: hidden; transition: all 0.3s ease-in; }
+main section#grid-camisetas article figure a img { width: 100%; height: auto; display: block; margin: 0 auto; float: none; position: relative; transition: all 0.3s ease-in; }
+main section#grid-camisetas article a:hover { opacity: 0.9; transition: all 0.3s ease-in }
+main section#grid-camisetas article a:hover img { transform: scale(1.05); transition: all 0.3s ease-in }
+main section#grid-camisetas article figure h5 { font-size: 1.1em; color: red; font-weight: 800; line-height: 1.5em; margin: 0px; padding: 10px 0 15px; letter-spacing: -0.015em; text-align: center; }
+main section#grid-camisetas article figure p { margin: 0; font-size: 0.9em; color: #555; letter-spacing: 0; font-weight: 400; line-height: 1.3em; padding: 0; text-align: center; }
+main section#grid-camisetas article figure h3 { width: auto; height: auto; margin: 0; float: none; position: relative; display: block; text-decoration: none; color: red; text-transform: uppercase; font-weight: 400; font-size: 1.2em; text-align: center; text-shadow: #000 0 1px 2px; }
+
+
+/* Zona Footer */
+footer#contacto { width: 100%; height: 300px; position: relative; margin: auto; float: none;  background: url(../img/foto-footer.jpg) no-repeat center center; background-size: cover; }
+
+footer#contacto article { width: 1100px; height: 300px; position: relative; margin: 0 auto; float: none; }
+footer#contacto article a { width: auto; height: 80px; display: inline-block; position: relative; margin: 110px 0 0 330px; float: none; }
+footer#contacto article img { width: auto; height: 80px; margin: 0 auto; display: block; float: none; }
+footer#contacto article nav#redes { height: auto; width: 140px; margin: 140px 390px 0 0; float: right; position: relative; text-align: center; }
+footer#contacto article nav#redes a { width: 40px; height: auto; display: inline-block; margin: 0; float: none; color: #fff; text-align: center; font-size: 1.3em; transition: all 0.3s ease-in; }
+footer#contacto article nav#redes a:hover { color: #000; transition: all 0.3s ease-in; }
+
+
+
+/* Zona de Media Queries para Responsive */
+
+/* MQ para Tablets = Breakpoint 1199px */
+@media only screen and (max-width: 1199px){
+    aside#menu-movil a#abrir,
+    aside#menu-movil a#cerrar { display: block; top: 20px; }
+
+
+    header { height: 80px; }
+    header article { width: 90%; }
+    header article a { width: 118px; height: 50px; margin: 0; float: right; top: 15px; }
+    header article a img { width: 100%; height: auto; }
+    header article nav a { display: none; }
+
+
+    main { width: auto; }
+
+    main a#btn-whatsapp { top: 420px; right: 10px; }
+    main section#banner-superior { height: 400px; }
+    main section#banner-superior article { display: none; }
+
+    main section#fotos-home a#btn-naranja { top: 25px; left: 25px; }
+
+    main section#grid-gorras { height: auto; }
+    
+    main section#grid-gorras h2 {  top: 20px; }
+    main section#grid-gorras article { width: 80%; height: auto; margin: 0 auto; }
+    main section#grid-gorras article figure { width: 100%; height: auto; margin: 0 auto; float: none; display: block; }
+    main section#grid-gorras article figure a { display: block; }
+
+
+    main section#grid-beanies { height: auto; top: 1500px; }
+    
+    main section#grid-beanies article { width: 80%; height: auto; }
+    main section#grid-beanies article figure { width: 100%; height: auto; margin: 0 auto; float: none; display: block; }
+    main section#grid-beanies article figure:nth-child(4) { width: 100%; height: auto; margin: 0 auto; float: none; display: block; top:-5px; }
+    main section#grid-beanies article figure:nth-child(5) { width: 100%; height: auto; margin: 0 auto; float: none; display: block; top:-5px; }
+    main section#grid-beanies article figure:nth-child(6) { width: 100%; height: auto; margin: 0 auto; float: none; display: block; top:-5px; }
+    main section#grid-beanies article figure a { display: block; }
+
+
+    main section#grid-promos { height: auto; top: 4400px;}
+
+    main section#grid-promos article { width: 100%; height: auto; float: none; margin: 0 auto; left: 5%; }
+    main section#grid-promos article figure { width: 200px; height: 136px; margin: 2px 2px 0px 0px; left: 0px; }
+    main section#grid-promos article figure a { width: 195px; height: 111px; margin: 2px 2px 0px 0px; left: 0px; }
+    main section#grid-promos article figure a img { width: 200px; height: 136px; display: block; margin: 0; float: none; position: relative; transition: all 0.3s ease-in; }
+
+    main section#grid-camisetas { height: auto; top: 4900px; }
+ 
+    main section#grid-camisetas h2 {  top: 20px; }
+    main section#grid-camisetas article { width: 80%; height: auto; margin: 0 auto; }
+    main section#grid-camisetas article figure { width: 100%; height: auto; margin: 0 auto; float: none; display: block; }
+    main section#grid-camisetas article figure a { display: block; }
+
+    footer#contacto  { height: 500px; top: 6500px; }
+
+    footer#contacto article { width: 80%; height: 500px; }
+    footer#contacto article { width: 100%; height: auto; }
+    footer#contacto article a { display: block; margin: 0 auto; float: none; top: 147px }
+    footer#contacto article nav#redes { width: 130px; margin: 0 auto; float: none; text-align: center; }
+
+}
+
+/* Breakpoint 799px */
+@media only screen and (max-width: 799px){
+
+}
+
+/* MQ para Móviles Grandes = Breakpoint 499px */
+@media only screen and (max-width: 499px){
+
+}
+
+/* MQ para Móviles Pequeños = Breakpoint 399px */
+@media only screen and (max-width: 399px){
+    main section#grid-instagram article a { width: 100%; height: auto; margin: 0 auto 35px; }
+
+}
